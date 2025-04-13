@@ -1,0 +1,119 @@
+/* OrgLogin.css */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    background-color: #BE3D2A;
+    padding: 20px; 
+}
+
+.login-box {
+    background: #E78B48;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* padding: 40px; */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login-icon {
+    background-color: #4a6bff;
+    color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    font-size: 36px;
+}
+
+.login-title {
+    color: #2d3748;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #106ce4;
+}
+
+.login-input {
+    width: 100%;
+    padding: 3%;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s;
+    text-align: center;
+    background-color: white;
+}
+
+.login-input:focus {
+    outline: none;
+    border-color: #4a6bff;
+    box-shadow: 0 0 0 2px rgba(74, 107, 255, 0.2);
+}
+
+.back-to-home{
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: #0061ff;
+}
+.login-button {
+    /*background-color: #4a6bff;*/
+    /*color: white;*/
+    /*border: none;*/
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background: white;
+    color: #0061ff;
+    border: 2px solid #0061ff;
+}
+
+.login-button:hover {
+    background-color: #00a2ff;
+    color: black;
+}
+
+.login-footer {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.login-link {
+    color: #4a6bff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.login-link:hover {
+    color: #3a5bef;
+    text-decoration: underline;
+}

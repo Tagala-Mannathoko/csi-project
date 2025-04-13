@@ -1,0 +1,221 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .registration-container {
+    background-color: #102E50;
+    min-height: 100vh;
+    padding: 30px;
+  }
+  
+  .registration-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .registration-header h1 {
+    color: #e8b84a;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .progress-step {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+  }
+  
+  .progress-step.active {
+    background-color: #F5C45E;
+    color: #102E50;
+  }
+  
+  .progress-line {
+    width: 80px;
+    height: 3px;
+    background-color: #e0e0e0;
+  }
+  
+  .registration-form {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-section {
+    margin-bottom: 30px;
+  }
+  
+  .form-section h2 {
+    color: #102E50;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    border-bottom: 2px solid #F5C45E;
+    padding-bottom: 10px;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #E78B48;
+  }
+  
+  .input-group input,
+  .input-group select,
+  .input-group textarea {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 2px solid #E78B48;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .input-group textarea {
+    padding: 15px;
+    min-height: 120px;
+  }
+  
+  .input-group input:focus,
+  .input-group select:focus,
+  .input-group textarea:focus {
+    outline: none;
+    border-color: #BE3D2A;
+    box-shadow: 0 0 0 3px rgba(190, 61, 42, 0.2);
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .form-row .input-group {
+    flex: 1;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 30px;
+  }
+  
+  .primary-button,
+  .secondary-button,
+  .submit-button {
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .primary-button {
+    background-color: #F5C45E;
+    color: #102E50;
+    border: none;
+  }
+  
+  .primary-button:hover {
+    background-color: #e8b84a;
+  }
+  
+  .secondary-button {
+    background-color: white;
+    color: #102E50;
+    border: 2px solid #102E50;
+  }
+  
+  .secondary-button:hover {
+    background-color: #f0f4f8;
+  }
+  
+  .submit-button {
+    background-color: #BE3D2A;
+    color: white;
+    border: none;
+  }
+  
+  .submit-button:hover {
+    background-color: #a83424;
+  }
+  
+  /* Success Message Styles */
+  .registration-success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .success-card {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+  }
+  
+  .success-icon {
+    font-size: 60px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+  }
+  
+  .success-card h2 {
+    color: #102E50;
+    margin-bottom: 15px;
+  }
+  
+  .success-card p {
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .registration-form {
+      padding: 20px;
+    }
+  
+    .form-row {
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    .progress-line {
+      width: 40px;
+    }
+  }

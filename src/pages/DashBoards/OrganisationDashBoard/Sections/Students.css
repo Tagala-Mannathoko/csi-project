@@ -1,0 +1,187 @@
+/* Common styles for all sections */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #F5C45E; /* Using the yellow from palette */
+}
+
+.section-header h2 {
+  color: #102E50; /* Dark blue from palette */
+  margin: 0;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 30px;
+  padding: 8px 15px;
+  box-shadow: 0 2px 8px rgba(16, 46, 80, 0.1);
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  font-size: 14px;
+  width: 200px;
+}
+
+.search-box svg {
+  color: #E78B48; /* Orange from palette */
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  color: #102E50;
+  position: relative;
+  margin-right: 5px;
+}
+
+.tabs button.active {
+  color: #BE3D2A; /* Red from palette */
+}
+
+.tabs button.active:after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #BE3D2A;
+}
+
+/* Students List */
+.students-list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.student-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 15px rgba(16, 46, 80, 0.1);
+  display: flex;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #F5C45E;
+}
+
+.student-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(16, 46, 80, 0.15);
+}
+
+.student-info h3 {
+  color: #102E50;
+  margin: 0 0 8px 0;
+  font-size: 18px;
+}
+
+.student-info p {
+  color: #555;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.student-progress {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.progress-bar {
+  width: 200px;
+  height: 20px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #E78B48, #BE3D2A);
+  transition: width 0.5s ease;
+}
+
+.progress-bar span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.student-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.student-actions button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #102E50;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+.student-actions button:hover {
+  background: #1a3d68;
+}
+
+.student-actions button:nth-child(2) {
+  background: #E78B48;
+}
+
+.student-actions button:nth-child(2):hover {
+  background: #d97e3a;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .student-card {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+  }
+}

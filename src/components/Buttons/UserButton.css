@@ -1,0 +1,135 @@
+/* Base Button Styles */
+.user-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 150%;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    font-family: inherit;
+    flex-direction: column;
+
+    /* Base size for desktop */
+    width: 250px;
+    height: 250px;
+    
+    /* Responsive adjustments */
+    @media (max-width: 1024px) {
+        width: 200px;
+        height: 200px;
+    }
+    
+    @media (max-width: 768px) {
+        width: min(80vw, 180px);
+        height: min(80vw, 180px);
+    }
+    
+    /* Maintain square aspect ratio on smallest screens */
+    @media (max-width: 480px) {
+        aspect-ratio: 1/1;
+        width: 70vw;
+        height: auto;
+    }
+  }
+  
+  /* Icon Styles */
+  .user-button .button-icon {
+    width: 1.5em; /* Relative to font size */
+    height: 1.5em;
+    transition: transform 0.2s ease;
+  }
+  
+  /* Text Styles */
+  .user-button .button-text {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Variants */
+  .user-button.primary {
+    background-color: #0061ff;
+    color: white;
+  }
+  /*
+  .user-button.outline {
+    background: transparent;
+    color: #0061ff;
+    border: 2px solid #0061ff;
+  }*/
+  
+  /* Sizes 
+  .user-button.small {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+  
+  .user-button.medium {
+    padding: 10px 16px;
+  }
+  */
+  .user-button.large {
+    padding: 14px 24px;
+    font-size: 16px;
+  }
+  
+  /* States */
+  .user-button:hover:not(.disabled) {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-button.primary:hover:not(.disabled) {
+    background-color: #003b94;
+
+  }
+  
+  .user-button:active:not(.disabled) {
+    transform: scale(0.98);
+  }
+  
+  .user-button.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  /* Animation for Download Arrow */
+  .user-button:hover .download-arrow {
+    animation: bounce 0.8s infinite alternate;
+  }
+  
+  @keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(3px); }
+  }
+  
+  /* Focus State */
+  .user-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 97, 255, 0.4);
+  }
+  
+  /* Ripple Effect */
+  .user-button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle, rgba(255,255,255,0.3) 1%, transparent 1%) center/15000%;
+    opacity: 0;
+    transition: opacity 0.8s, background-size 0.8s;
+  }
+  
+  .user-button:active::after {
+    background-size: 100%;
+    opacity: 1;
+    transition: background-size 0s;
+  }
