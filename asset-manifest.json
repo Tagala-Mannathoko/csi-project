@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Tagala-Mannathoko/csi-project/static/css/main.125dfb25.css",
+    "main.js": "/Tagala-Mannathoko/csi-project/static/js/main.b7fa8634.js",
+    "static/js/453.421e570e.chunk.js": "/Tagala-Mannathoko/csi-project/static/js/453.421e570e.chunk.js",
+    "index.html": "/Tagala-Mannathoko/csi-project/index.html",
+    "main.125dfb25.css.map": "/Tagala-Mannathoko/csi-project/static/css/main.125dfb25.css.map",
+    "main.b7fa8634.js.map": "/Tagala-Mannathoko/csi-project/static/js/main.b7fa8634.js.map",
+    "453.421e570e.chunk.js.map": "/Tagala-Mannathoko/csi-project/static/js/453.421e570e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.125dfb25.css",
+    "static/js/main.b7fa8634.js"
+  ]
+}
